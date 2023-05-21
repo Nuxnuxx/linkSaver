@@ -31,7 +31,7 @@ const Search: React.FC = () => {
           <img className="loader" src={cuteLoading} />
         </div>
       ) : (
-        <div className="results">
+        <div className="results-search">
           {results.length ? (
             <Results items={results} />
           ) : (
