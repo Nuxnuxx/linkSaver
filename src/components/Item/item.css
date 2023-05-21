@@ -9,17 +9,19 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  border: 3px solid black;
 }
 
 .card-layout {
   width: 14rem;
-  height: 15rem;
+  height: 13rem;
   position: relative;
   border-radius: 10%;
   background-color: pink;
   display: flex;
   flex-direction: column;
   row-gap: 5rem;
+  border: 3px solid black;
 }
 
 .card-title {

@@ -21,6 +21,7 @@ const Search: React.FC = () => {
           className="input"
           type="text"
           value={name}
+          placeholder="Titre"
           onChange={(e) => {
             setName(e.target.value);
           }}
@@ -35,7 +36,7 @@ const Search: React.FC = () => {
           {results.length ? (
             <Results items={results} />
           ) : (
-            <div className="card">No link</div>
+            <div className="card">Pas de lien</div>
           )}
         </div>
       )}

@@ -25,3 +25,9 @@
   width: 10rem;
   animation: spin 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
 }
+
+input {
+  border: 3px solid purple;
+  border-radius: 50px;
+  padding: 1rem;
+}
