@@ -1,3 +1,3 @@
-const link = 'https://linklist-api.onrender.com'
+const apiLink = 'https://linklist-api.onrender.com'
 
-export default link
+export default apiLink
