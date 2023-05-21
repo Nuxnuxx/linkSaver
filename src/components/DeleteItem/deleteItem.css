@@ -1,0 +1,8 @@
+.deleteButton {
+  all: unset;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: pink;
+  padding: 0.1rem;
+  border-radius: 10%;
+}

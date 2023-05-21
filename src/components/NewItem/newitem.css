@@ -1,0 +1,21 @@
+.newItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  margin-top: 2rem;
+}
+
+
+.submit {
+  all: unset;
+  font-size: 5rem;
+  border-radius: 25%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.shiba {
+  width: 6rem;
+}
