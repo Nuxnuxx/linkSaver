@@ -1,5 +1,4 @@
 import { QueryFunction } from "react-query";
-import apiLink from "../../utils/apiLink";
 
 const fetchItems: QueryFunction<
   ItemsNewApiResponse[],
@@ -9,9 +8,9 @@ const fetchItems: QueryFunction<
 
   let apiRes;
   if (title) {
-    apiRes = await fetch(`${apiLink}/search?text="${title}"`);
+    apiRes = await fetch(`${import.meta.env.VITE_API_LINK}/search?text="${title}"`);
   } else {
-    apiRes = await fetch(`${apiLink}/items`);
+    apiRes = await fetch(`${import.meta.env.VITE_API_LINK}/items`);
   }
 
   if (!apiRes.ok) {

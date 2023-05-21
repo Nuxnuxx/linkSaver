@@ -3,9 +3,8 @@ import { MutationFunction } from "react-query";
 const postItem: MutationFunction<ItemsNewApiResponse, ItemProps> =
   async function (params) {
     const { title, link } = params;
-    const apiLink = "https://linklist-api.onrender.com";
 
-    const apiRes = await fetch(`${apiLink}/new`, {
+    const apiRes = await fetch(`${import.meta.env.VITE_API_LINK}/new`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

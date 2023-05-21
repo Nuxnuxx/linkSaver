@@ -1,11 +1,10 @@
 import { MutationFunction } from "react-query";
-import apiLink from "../../utils/apiLink";
 
 const postSearch: MutationFunction<ItemsNewApiResponse[], string> = async function (
   title
 ) {
 
-  const apiRes = await fetch(`${apiLink}/search`, {
+  const apiRes = await fetch(`${import.meta.env.VITE_API_LINK}/search`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

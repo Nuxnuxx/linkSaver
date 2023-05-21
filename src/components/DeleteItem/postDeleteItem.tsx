@@ -1,5 +1,4 @@
 import { MutationFunction } from "react-query";
-import apiLink from "../../utils/apiLink";
 
 const postDeleteItem: MutationFunction<ItemsNewApiResponse, string> = async function (
   params
@@ -7,7 +6,7 @@ const postDeleteItem: MutationFunction<ItemsNewApiResponse, string> = async func
 
   const  title  = params;
 
-  const apiRes = await fetch(`${apiLink}/delete`, {
+  const apiRes = await fetch(`${import.meta.env.VITE_API_LINK}/delete`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
