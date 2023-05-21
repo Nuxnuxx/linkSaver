@@ -4,6 +4,11 @@ import Header from "./components/Header/Header";
 import { QueryClient, QueryClientProvider } from "react-query";
 import NewItem from "./components/NewItem/NewItem";
 import './assets/style/style.css'
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+
+if (import.meta.env.PROD) {
+  disableReactDevTools()
+}
 
 const queryClient = new QueryClient({
   defaultOptions: {
