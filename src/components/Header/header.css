@@ -1,16 +1,35 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   row-gap: 2rem;
   padding-bottom: 2rem;
   text-align: center;
-  border-bottom: 2px solid purple;
+  border-bottom: 2px solid #F43F08;
+  padding-top: 1rem;
 }
 
 .link {
   all: unset;
   cursor: pointer;
-
   font-size: 1.2rem;
+  border-radius: 75px;
+}
+
+.link-div {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 75px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .link {
+    background-color: cyan;
+    padding: 0.2rem;
+  }
 }

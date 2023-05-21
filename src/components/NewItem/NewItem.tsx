@@ -4,7 +4,6 @@ import postItem from "./postItem";
 import cuteLoading from "../../assets/img/cute-loading.png";
 import shiba from "../../assets/img/shiba.png";
 import { useQueryClient } from "react-query";
-
 function NewItem() {
   const queryClient = useQueryClient();
 
@@ -33,7 +32,7 @@ function NewItem() {
         <input id="title" name="title" placeholder="Titre" />
       </label>
 
-      <label className="link" htmlFor="link">
+      <label className="link-input" htmlFor="link">
         <input id="link" name="link" placeholder="Lien" />
       </label>
       {mutation.isLoading ? (

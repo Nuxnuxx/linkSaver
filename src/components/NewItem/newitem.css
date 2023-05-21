@@ -18,7 +18,8 @@
 
 .shiba {
   width: 6rem;
-  border: 3px solid purple;
+  border: 3px solid #F43F08;
   border-radius: 100px;
-  padding: 1rem;
+  padding: 1.2rem;
+  background-color: #F43F08;
 }

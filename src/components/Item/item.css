@@ -1,7 +1,7 @@
 .card {
   width: 16rem;
   height: 19rem;
-  background-color: purple;
+  background-color: cyan;
   margin: 2rem auto;
   border-radius: 10%;
   display: flex;
@@ -17,7 +17,7 @@
   height: 13rem;
   position: relative;
   border-radius: 10%;
-  background-color: pink;
+  background-color: white;
   display: flex;
   flex-direction: column;
   row-gap: 5rem;
@@ -30,6 +30,6 @@
 
 .a {
   all:unset;
-  color: purple;
+  color: black;
   cursor: pointer;
 }

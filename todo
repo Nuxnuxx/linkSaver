@@ -3,6 +3,7 @@ afficher pas de lien si aucun lien DONE
 desactivez react dev tools DONE
 desactivez console.log DONE
 faire premiere version css DONE
+faire deuxieme version css DONE
 ajouter elascticsearch pour la fonction de recherche
   - mongodbconnector
   - elascticsearch

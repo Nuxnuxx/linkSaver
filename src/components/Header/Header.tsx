@@ -5,10 +5,10 @@ function Header() {
   return (
     <div className="header">
       <Link className="link new" to="/new">
-        <div> Ajouter un nouveau liens </div>
+        <div className="link-div"> Ajouter un nouveau liens </div>
       </Link>
       <Link className="link list" to="/">
-        <div> Liste des liens </div>
+        <div className="link-div"> Liste des liens </div>
       </Link>
     </div>
   );
