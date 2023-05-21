@@ -14,7 +14,7 @@
   cursor: pointer;
   font-size: 1.2rem;
   border-radius: 75px;
-  border: 1px solid #F43F08;
+  border: 2px solid #F43F08;
 }
 
 .link-div {
@@ -30,7 +30,6 @@
   }
 
   .link {
-    background-color: cyan;
     padding: 0.2rem;
   }
 }
