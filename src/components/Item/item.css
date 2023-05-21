@@ -10,6 +10,7 @@
   justify-content: center;
   text-align: center;
   border: 3px solid black;
+  position: relative;
 }
 
 .card-layout {
@@ -32,4 +33,35 @@
   all:unset;
   color: black;
   cursor: pointer;
+}
+
+.little-shiba-right {
+  position: absolute;
+  width: 4rem;
+  top: -15px;
+  right: -15px;
+  rotate: 90deg;
+}
+
+.little-shiba-left {
+  position: absolute;
+  width: 4rem;
+  top: -15px;
+  left: -15px;
+}
+
+.little-shiba-left-bottom {
+  position: absolute;
+  width: 4rem;
+  bottom: -15px;
+  left: -15px;
+  rotate: -90deg;
+}
+
+.little-shiba-right-bottom {
+  position: absolute;
+  width: 4rem;
+  bottom: -15px;
+  right: -15px;
+  rotate: 180deg;
 }
