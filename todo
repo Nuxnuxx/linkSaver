@@ -1,5 +1,6 @@
 mettre apiLink dans un .env DONE
 afficher pas de lien si aucun lien DONE
-mettre des condition pour le mode dev et prod 
 desactivez react dev tools DONE
+desactivez console.log DONE
 faire css
+

@@ -8,9 +8,6 @@ function DeleteItem({title} : {title: string} ) {
   const mutation = useMutation(postDeleteItem, {
     onSuccess: () => {
       queryClient.invalidateQueries(["items"])
-    },
-    onError: (error) => {
-      console.error(error)
     }
   })
 

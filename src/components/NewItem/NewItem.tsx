@@ -11,10 +11,7 @@ function NewItem() {
   const mutation = useMutation(postItem, {
     onSuccess: () => {
       queryClient.invalidateQueries(["items"]);
-    },
-    onError: (error) => {
-      console.error(error);
-    },
+    }
   });
 
   return (
