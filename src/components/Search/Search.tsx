@@ -9,7 +9,7 @@ const Search: React.FC = () => {
   const [name, setName] = useState("");
 
   const { isLoading, data } = useQuery(["items", name], fetchItems, {
-    cacheTime: 0 // disable caching dangerous
+    cacheTime: 0, // disable caching dangerous
   });
 
   const results = data ?? [];
@@ -31,7 +31,13 @@ const Search: React.FC = () => {
           <img className="loader" src={cuteLoading} />
         </div>
       ) : (
-        <Results items={results} />
+        <div className="results">
+          {results.length ? (
+            <Results items={results} />
+          ) : (
+            <div className="card">No link</div>
+          )}
+        </div>
       )}
     </div>
   );
