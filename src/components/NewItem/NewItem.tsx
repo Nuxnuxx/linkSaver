@@ -17,13 +17,6 @@ function NewItem() {
     },
   });
 
-  if (mutation.isLoading) {
-    return (
-      <div className="loading-pane">
-        <img className="loader" src={cuteLoading} alt="saucisse" />
-      </div>
-    );
-  }
   return (
     <form
       className="newItem"
@@ -46,9 +39,15 @@ function NewItem() {
       <label className="link" htmlFor="link">
         <input id="link" name="link" placeholder="Lien" />
       </label>
-      <button className="submit">
-        <img className="shiba" src={shiba} alt="shiba" />
-      </button>
+      {mutation.isLoading ? (
+        <div className="loading-pane">
+          <img className="loader" src={cuteLoading} alt="saucisse" />
+        </div>
+      ) : (
+          <button className="submit">
+            <img className="shiba" src={shiba} alt="shiba" />
+          </button>
+        )}
     </form>
   );
 }
