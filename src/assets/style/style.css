@@ -31,7 +31,7 @@ html {
 }
 
 input {
-  border: 3px solid cyan;
+  border: 3px solid #7BEE9D;;
   border-radius: 50px;
   padding: 1rem;
 }
