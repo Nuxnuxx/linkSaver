@@ -13,7 +13,7 @@ const Item: React.FC<ItemProps> = ({ title, link }) => {
       <a className='a' href={link} target="_blank" rel="noopener noreferrer">
       <div className='card-layout'>
         <div className="card-title">{title}</div>
-        <div> {link}</div>
+        <div className='card-link'>{link}</div>
       </div>
       </a>
       <DeleteItem title={title}/>
