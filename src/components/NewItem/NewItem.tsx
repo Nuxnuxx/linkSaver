@@ -25,7 +25,9 @@ function NewItem() {
           title: finalTitle,
           link: formData.get("link")?.toString() ?? "",
         };
+        if (obj.link.length !== 0 || obj.title.length !== 0){
         mutation.mutate(obj);
+        }
       }}
     >
       <label className="title" htmlFor="title">
